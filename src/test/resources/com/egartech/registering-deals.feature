@@ -5,8 +5,8 @@ Feature: Checking registering deals
         When init focus session for username "<login>" with loginName "<loginName>"
         When load trademonitor for deal number "<tradeId>" with horizon from "<horizon>"
         And try execute STP action
-        When compare with TS
-        When compare with DB
+       //When compare with TS
+        When Send xml request second
         Then I should be told "Nope"
 
         Examples:

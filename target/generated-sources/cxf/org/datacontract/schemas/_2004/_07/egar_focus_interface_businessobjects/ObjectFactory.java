@@ -25,32 +25,24 @@ import org.datacontract.schemas._2004._07.egar_focus_events_base.ArrayOfIdName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _SanctionControlRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", "SanctionControlRow");
-    private final static QName _ExerciseType_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.DealEvents", "ExerciseType");
     private final static QName _TradeInstruments_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "TradeInstruments");
     private final static QName _ArrayOfTradeInstrumentColumn_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "ArrayOfTradeInstrumentColumn");
     private final static QName _TradeInstrumentColumn_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "TradeInstrumentColumn");
     private final static QName _ArrayOfTradeInstrumentRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "ArrayOfTradeInstrumentRow");
     private final static QName _TradeInstrumentRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "TradeInstrumentRow");
-    private final static QName _TradeInstrumentColumnPossibleValues_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "possibleValues");
+    private final static QName _ExerciseType_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.DealEvents", "ExerciseType");
+    private final static QName _SanctionControlRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", "SanctionControlRow");
     private final static QName _SanctionControlRowAction_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", "Action");
     private final static QName _SanctionControlRowEvent_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", "Event");
     private final static QName _SanctionControlRowReason_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", "Reason");
     private final static QName _SanctionControlRowUser_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", "User");
+    private final static QName _TradeInstrumentColumnPossibleValues_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", "possibleValues");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.datacontract.schemas._2004._07.egar_focus_interface_businessobjects
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link SanctionControlRow }
-     * 
-     */
-    public SanctionControlRow createSanctionControlRow() {
-        return new SanctionControlRow();
     }
 
     /**
@@ -94,21 +86,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SanctionControlRow }{@code >}}
+     * Create an instance of {@link SanctionControlRow }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", name = "SanctionControlRow")
-    public JAXBElement<SanctionControlRow> createSanctionControlRow(SanctionControlRow value) {
-        return new JAXBElement<SanctionControlRow>(_SanctionControlRow_QNAME, SanctionControlRow.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ExerciseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.DealEvents", name = "ExerciseType")
-    public JAXBElement<ExerciseType> createExerciseType(ExerciseType value) {
-        return new JAXBElement<ExerciseType>(_ExerciseType_QNAME, ExerciseType.class, null, value);
+    public SanctionControlRow createSanctionControlRow() {
+        return new SanctionControlRow();
     }
 
     /**
@@ -157,12 +139,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfIdName }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ExerciseType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", name = "possibleValues", scope = TradeInstrumentColumn.class)
-    public JAXBElement<ArrayOfIdName> createTradeInstrumentColumnPossibleValues(ArrayOfIdName value) {
-        return new JAXBElement<ArrayOfIdName>(_TradeInstrumentColumnPossibleValues_QNAME, ArrayOfIdName.class, TradeInstrumentColumn.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.DealEvents", name = "ExerciseType")
+    public JAXBElement<ExerciseType> createExerciseType(ExerciseType value) {
+        return new JAXBElement<ExerciseType>(_ExerciseType_QNAME, ExerciseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SanctionControlRow }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", name = "SanctionControlRow")
+    public JAXBElement<SanctionControlRow> createSanctionControlRow(SanctionControlRow value) {
+        return new JAXBElement<SanctionControlRow>(_SanctionControlRow_QNAME, SanctionControlRow.class, null, value);
     }
 
     /**
@@ -199,6 +190,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.SanctionControl", name = "User", scope = SanctionControlRow.class)
     public JAXBElement<String> createSanctionControlRowUser(String value) {
         return new JAXBElement<String>(_SanctionControlRowUser_QNAME, String.class, SanctionControlRow.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfIdName }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Interface.BusinessObjects.FocusDeals", name = "possibleValues", scope = TradeInstrumentColumn.class)
+    public JAXBElement<ArrayOfIdName> createTradeInstrumentColumnPossibleValues(ArrayOfIdName value) {
+        return new JAXBElement<ArrayOfIdName>(_TradeInstrumentColumnPossibleValues_QNAME, ArrayOfIdName.class, TradeInstrumentColumn.class, value);
     }
 
 }

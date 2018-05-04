@@ -10,6 +10,8 @@ import cucumber.api.Transform;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
+
+import java.awt.image.DataBufferDouble;
 import java.io.IOException;
 import java.net.InetAddress;
 
@@ -19,12 +21,14 @@ import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.message.Message;
 import org.tempuri.*;
+import org.tempuri.AddDealEvent;
 import org.tempuri.DealServiceImpl;
 import org.tempuri.IDealService;
 import org.tempuri.InitializeSession;
 import org.tempuri.InitializeSessionResponse;
 import org.w3._2005._09.ws_i18n.International;
 import org.w3._2005._09.ws_i18n.ObjectFactory;
+import sun.security.timestamp.TSRequest;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.datatype.DatatypeConfigurationException;
@@ -83,9 +87,36 @@ public class TSSteps {
     }
 
     @Then("^I should be told \"([^\"]*)\"$")
+    public void i_should_be_told() {
+
+    }
+
+    @Then("^I should be told \"([^\"]*)\"$")
     public void i_should_be_told(String expectedAnswer) {
         assertEquals(true, true);
     }
 
 
+    @When("^Send xml request second$")
+    public void compareWithDB() throws Throwable {
+        TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
+        tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString()); //  записываем в хедер параметры
+        tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());  //  записываем в хедер параметры
+
+
+        DealServiceImpl dealService = new DealServiceImpl();  // забираем всдл
+        dealService.setHandlerResolver(tsHandlerResolver); // вставляем записаные парметры в хедер.
+
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService(); // создаёт порт для прокси. незнаю зачем это если хардкодом ссылка вбита
+
+
+        Date date = new Date(); // Генерим дату
+        GregorianCalendar c = new GregorianCalendar();//  Генерим дату нужного формата
+        c.setTime(date); //  Генерим дату  нужного формата
+        XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c); //  Генерим дату  нужного формата
+
+         iDealService.loadTradeMonitor(1984951,date2,false,false); //  Отправляем xml с параметрами в хедере.
+
+        throw new PendingException();
+    }
 }

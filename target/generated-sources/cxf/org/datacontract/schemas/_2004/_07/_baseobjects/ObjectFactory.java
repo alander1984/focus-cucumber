@@ -41,6 +41,7 @@ public class ObjectFactory {
     private final static QName _NrdImportInfoIsMoneyLiability_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "IsMoneyLiability");
     private final static QName _NrdImportInfoMessage_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Message");
     private final static QName _NrdImportInfoRegNo_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "RegNo");
+    private final static QName _NrdImportInfoCollectionItems_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Items");
     private final static QName _NrdSecLiabilityBasis_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Basis");
     private final static QName _NrdSecLiabilityFocusTradeID1_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Focus_tradeID1");
     private final static QName _NrdSecLiabilityFocusTradeID2_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Focus_tradeID2");
@@ -62,7 +63,6 @@ public class ObjectFactory {
     private final static QName _NrdLiabilityFMoney_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "F_money");
     private final static QName _NrdLiabilityNrdSecLiabilities_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "NrdSecLiabilities");
     private final static QName _NrdLiabilityAccountingBasket_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "accounting_basket");
-    private final static QName _NrdImportInfoCollectionItems_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Items");
     private final static QName _NrdTradeBaseChannel_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Channel");
     private final static QName _NrdTradeBaseExpNum_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Exp_num");
     private final static QName _NrdTradeBaseExpdealId_QNAME = new QName("http://schemas.datacontract.org/2004/07/_BaseObjects", "Expdeal_id");
@@ -86,14 +86,6 @@ public class ObjectFactory {
      */
     public NrdTradeBase createNrdTradeBase() {
         return new NrdTradeBase();
-    }
-
-    /**
-     * Create an instance of {@link NrdImportInfoCollection }
-     * 
-     */
-    public NrdImportInfoCollection createNrdImportInfoCollection() {
-        return new NrdImportInfoCollection();
     }
 
     /**
@@ -134,6 +126,14 @@ public class ObjectFactory {
      */
     public NrdSecLiability createNrdSecLiability() {
         return new NrdSecLiability();
+    }
+
+    /**
+     * Create an instance of {@link NrdImportInfoCollection }
+     * 
+     */
+    public NrdImportInfoCollection createNrdImportInfoCollection() {
+        return new NrdImportInfoCollection();
     }
 
     /**
@@ -294,6 +294,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/_BaseObjects", name = "RegNo", scope = NrdImportInfo.class)
     public JAXBElement<String> createNrdImportInfoRegNo(String value) {
         return new JAXBElement<String>(_NrdImportInfoRegNo_QNAME, String.class, NrdImportInfo.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfNrdImportInfo }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/_BaseObjects", name = "Items", scope = NrdImportInfoCollection.class)
+    public JAXBElement<ArrayOfNrdImportInfo> createNrdImportInfoCollectionItems(ArrayOfNrdImportInfo value) {
+        return new JAXBElement<ArrayOfNrdImportInfo>(_NrdImportInfoCollectionItems_QNAME, ArrayOfNrdImportInfo.class, NrdImportInfoCollection.class, value);
     }
 
     /**
@@ -519,15 +528,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/_BaseObjects", name = "accounting_basket", scope = NrdLiability.class)
     public JAXBElement<Short> createNrdLiabilityAccountingBasket(Short value) {
         return new JAXBElement<Short>(_NrdLiabilityAccountingBasket_QNAME, Short.class, NrdLiability.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfNrdImportInfo }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/_BaseObjects", name = "Items", scope = NrdImportInfoCollection.class)
-    public JAXBElement<ArrayOfNrdImportInfo> createNrdImportInfoCollectionItems(ArrayOfNrdImportInfo value) {
-        return new JAXBElement<ArrayOfNrdImportInfo>(_NrdImportInfoCollectionItems_QNAME, ArrayOfNrdImportInfo.class, NrdImportInfoCollection.class, value);
     }
 
     /**

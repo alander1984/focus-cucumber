@@ -51,7 +51,10 @@ public class ObjectFactory {
     private final static QName _ServiceOperationResultErrorDump_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "ErrorDump");
     private final static QName _ServiceOperationResultSessionID_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "SessionID");
     private final static QName _ServiceOperationResultUserName_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "UserName");
-    private final static QName _AddDealEventContractFields_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Fields");
+    private final static QName _ServiceDetalizationResultFields_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Fields");
+    private final static QName _ServiceValueResultValue_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Value");
+    private final static QName _ServiceDealOperationEvent_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Event");
+    private final static QName _ServiceDealOperationDeal_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Deal");
     private final static QName _AddDealEventContractSaveAction_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "SaveAction");
     private final static QName _DealFieldDescriptionEng_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "DescriptionEng");
     private final static QName _DealFieldErrorText_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "ErrorText");
@@ -87,27 +90,16 @@ public class ObjectFactory {
     private final static QName _DealEventProxyUsedForKnownTypeSerializationObject_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "UsedForKnownTypeSerializationObject");
     private final static QName _DealEventProxyValueValidation_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "ValueValidation");
     private final static QName _DealEventProxyValues_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Values");
-    private final static QName _ServiceValueResultValue_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Value");
     private final static QName _EventsScheduleProxyEventTypeProperty_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "EventTypeProperty");
     private final static QName _EventsScheduleProxyEventTypes_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "EventTypes");
     private final static QName _EventsScheduleProxyEvents_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Events");
     private final static QName _EventsScheduleProxyFieldName_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "FieldName");
-    private final static QName _ServiceDealOperationEvent_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Event");
-    private final static QName _ServiceDealOperationDeal_QNAME = new QName("http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", "Deal");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link ServiceDealOperation }
-     * 
-     */
-    public ServiceDealOperation createServiceDealOperation() {
-        return new ServiceDealOperation();
     }
 
     /**
@@ -119,27 +111,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ServiceValueResult }
+     * Create an instance of {@link ArrayOfDealEventProxy }
      * 
      */
-    public ServiceValueResult createServiceValueResult() {
-        return new ServiceValueResult();
-    }
-
-    /**
-     * Create an instance of {@link ServiceDetalizationResult }
-     * 
-     */
-    public ServiceDetalizationResult createServiceDetalizationResult() {
-        return new ServiceDetalizationResult();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfAddDealEventContract }
-     * 
-     */
-    public ArrayOfAddDealEventContract createArrayOfAddDealEventContract() {
-        return new ArrayOfAddDealEventContract();
+    public ArrayOfDealEventProxy createArrayOfDealEventProxy() {
+        return new ArrayOfDealEventProxy();
     }
 
     /**
@@ -148,14 +124,6 @@ public class ObjectFactory {
      */
     public DealEventProxy createDealEventProxy() {
         return new DealEventProxy();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfDealEventProxy }
-     * 
-     */
-    public ArrayOfDealEventProxy createArrayOfDealEventProxy() {
-        return new ArrayOfDealEventProxy();
     }
 
     /**
@@ -183,6 +151,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ArrayOfAddDealEventContract }
+     * 
+     */
+    public ArrayOfAddDealEventContract createArrayOfAddDealEventContract() {
+        return new ArrayOfAddDealEventContract();
+    }
+
+    /**
      * Create an instance of {@link AddDealEventContract }
      * 
      */
@@ -191,11 +167,35 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ServiceDealOperation }
+     * 
+     */
+    public ServiceDealOperation createServiceDealOperation() {
+        return new ServiceDealOperation();
+    }
+
+    /**
      * Create an instance of {@link ServiceOperationResult }
      * 
      */
     public ServiceOperationResult createServiceOperationResult() {
         return new ServiceOperationResult();
+    }
+
+    /**
+     * Create an instance of {@link ServiceValueResult }
+     * 
+     */
+    public ServiceValueResult createServiceValueResult() {
+        return new ServiceValueResult();
+    }
+
+    /**
+     * Create an instance of {@link ServiceDetalizationResult }
+     * 
+     */
+    public ServiceDetalizationResult createServiceDetalizationResult() {
+        return new ServiceDetalizationResult();
     }
 
     /**
@@ -352,12 +352,48 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfDealField }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Fields", scope = ServiceDetalizationResult.class)
+    public JAXBElement<ArrayOfDealField> createServiceDetalizationResultFields(ArrayOfDealField value) {
+        return new JAXBElement<ArrayOfDealField>(_ServiceDetalizationResultFields_QNAME, ArrayOfDealField.class, ServiceDetalizationResult.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Value", scope = ServiceValueResult.class)
+    public JAXBElement<Object> createServiceValueResultValue(Object value) {
+        return new JAXBElement<Object>(_ServiceValueResultValue_QNAME, Object.class, ServiceValueResult.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DealEventProxy }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Event", scope = ServiceDealOperation.class)
+    public JAXBElement<DealEventProxy> createServiceDealOperationEvent(DealEventProxy value) {
+        return new JAXBElement<DealEventProxy>(_ServiceDealOperationEvent_QNAME, DealEventProxy.class, ServiceDealOperation.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DealBase }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Deal", scope = ServiceDealOperation.class)
+    public JAXBElement<DealBase> createServiceDealOperationDeal(DealBase value) {
+        return new JAXBElement<DealBase>(_ServiceDealOperationDeal_QNAME, DealBase.class, ServiceDealOperation.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfKeyValueOfstringanyType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Fields", scope = AddDealEventContract.class)
     public JAXBElement<ArrayOfKeyValueOfstringanyType> createAddDealEventContractFields(ArrayOfKeyValueOfstringanyType value) {
-        return new JAXBElement<ArrayOfKeyValueOfstringanyType>(_AddDealEventContractFields_QNAME, ArrayOfKeyValueOfstringanyType.class, AddDealEventContract.class, value);
+        return new JAXBElement<ArrayOfKeyValueOfstringanyType>(_ServiceDetalizationResultFields_QNAME, ArrayOfKeyValueOfstringanyType.class, AddDealEventContract.class, value);
     }
 
     /**
@@ -483,7 +519,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Fields", scope = DealBase.class)
     public JAXBElement<ArrayOfDealField> createDealBaseFields(ArrayOfDealField value) {
-        return new JAXBElement<ArrayOfDealField>(_AddDealEventContractFields_QNAME, ArrayOfDealField.class, DealBase.class, value);
+        return new JAXBElement<ArrayOfDealField>(_ServiceDetalizationResultFields_QNAME, ArrayOfDealField.class, DealBase.class, value);
     }
 
     /**
@@ -600,7 +636,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Fields", scope = DealEventProxy.class)
     public JAXBElement<ArrayOfstring> createDealEventProxyFields(ArrayOfstring value) {
-        return new JAXBElement<ArrayOfstring>(_AddDealEventContractFields_QNAME, ArrayOfstring.class, DealEventProxy.class, value);
+        return new JAXBElement<ArrayOfstring>(_ServiceDetalizationResultFields_QNAME, ArrayOfstring.class, DealEventProxy.class, value);
     }
 
     /**
@@ -712,24 +748,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfDealField }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Fields", scope = ServiceDetalizationResult.class)
-    public JAXBElement<ArrayOfDealField> createServiceDetalizationResultFields(ArrayOfDealField value) {
-        return new JAXBElement<ArrayOfDealField>(_AddDealEventContractFields_QNAME, ArrayOfDealField.class, ServiceDetalizationResult.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Value", scope = ServiceValueResult.class)
-    public JAXBElement<Object> createServiceValueResultValue(Object value) {
-        return new JAXBElement<Object>(_ServiceValueResultValue_QNAME, Object.class, ServiceValueResult.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfKeyValueOfstringArrayOfKeyValueOfstringanyTypety7Ep6D1 }{@code >}}
      * 
      */
@@ -780,7 +798,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Fields", scope = EventsScheduleProxy.class)
     public JAXBElement<ArrayOfstring> createEventsScheduleProxyFields(ArrayOfstring value) {
-        return new JAXBElement<ArrayOfstring>(_AddDealEventContractFields_QNAME, ArrayOfstring.class, EventsScheduleProxy.class, value);
+        return new JAXBElement<ArrayOfstring>(_ServiceDetalizationResultFields_QNAME, ArrayOfstring.class, EventsScheduleProxy.class, value);
     }
 
     /**
@@ -799,24 +817,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "UsedForKnownTypeSerializationObject", scope = EventsScheduleProxy.class)
     public JAXBElement<Object> createEventsScheduleProxyUsedForKnownTypeSerializationObject(Object value) {
         return new JAXBElement<Object>(_DealEventProxyUsedForKnownTypeSerializationObject_QNAME, Object.class, EventsScheduleProxy.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DealEventProxy }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Event", scope = ServiceDealOperation.class)
-    public JAXBElement<DealEventProxy> createServiceDealOperationEvent(DealEventProxy value) {
-        return new JAXBElement<DealEventProxy>(_ServiceDealOperationEvent_QNAME, DealEventProxy.class, ServiceDealOperation.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DealBase }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration", name = "Deal", scope = ServiceDealOperation.class)
-    public JAXBElement<DealBase> createServiceDealOperationDeal(DealBase value) {
-        return new JAXBElement<DealBase>(_ServiceDealOperationDeal_QNAME, DealBase.class, ServiceDealOperation.class, value);
     }
 
 }
