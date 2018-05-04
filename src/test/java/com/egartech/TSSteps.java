@@ -91,12 +91,6 @@ public class TSSteps {
 
     }
 
-    @Then("^I should be told \"([^\"]*)\"$")
-    public void i_should_be_told(String expectedAnswer) {
-        assertEquals(true, true);
-    }
-
-
     @When("^Send xml request second$")
     public void compareWithDB() throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
