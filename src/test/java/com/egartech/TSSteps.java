@@ -20,6 +20,7 @@ import org.apache.cxf.frontend.ClientProxy;
 import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.message.Message;
+import org.datacontract.schemas._2004._07.egar_focus.InterActionParams;
 import org.tempuri.*;
 import org.tempuri.AddDealEvent;
 import org.tempuri.DealServiceImpl;
@@ -96,27 +97,26 @@ public class TSSteps {
         assertEquals(true, true);
     }
 
+// ---------------------------------------
 
-    @When("^Send xml request second$")
-    public void compareWithDB() throws Throwable {
+    @When("^Send xml request third with params \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void sendXmlRequestThirdWithParamsAnd(String stpAction, boolean execute) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString()); //  записываем в хедер параметры
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());  //  записываем в хедер параметры
 
-
         DealServiceImpl dealService = new DealServiceImpl();  // забираем всдл
         dealService.setHandlerResolver(tsHandlerResolver); // вставляем записаные парметры в хедер.
 
-        IDealService iDealService = dealService.getBasicHttpBindingIDealService(); // создаёт порт для прокси. незнаю зачем это если хардкодом ссылка вбита
 
-
-        Date date = new Date(); // Генерим дату
-        GregorianCalendar c = new GregorianCalendar();//  Генерим дату нужного формата
-        c.setTime(date); //  Генерим дату  нужного формата
-        XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c); //  Генерим дату  нужного формата
-
-         iDealService.loadTradeMonitor(1984951,date2,false,false); //  Отправляем xml с параметрами в хедере.
-
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService(); // Сервисы из всдл
+        InterActionParams interActionParams = new InterActionParams();
+        interActionParams.getActionResults();
+        interActionParams.getFormFields();
+        interActionParams.getFormName();
+        interActionParams.isIgnoreWarnings();
+        interActionParams.isNeedToPrintTicket();
+        iDealService.tryExecuteSTPAction(stpAction , execute,interActionParams);//  Отправляем xml
         throw new PendingException();
     }
 }

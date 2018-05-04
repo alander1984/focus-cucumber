@@ -6,7 +6,7 @@ Feature: Checking registering deals
         When load trademonitor for deal number "<tradeId>" with horizon from "<horizon>"
         And try execute STP action
        //When compare with TS
-        When Send xml request second
+        When Send xml request third with params "Cancel" and "false"
         Then I should be told "Nope"
 
         Examples:
