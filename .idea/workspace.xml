@@ -1,7 +1,411 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b45871-b049-4845-9fbd-9c0cb1118fb1" name="Default" comment="" />
+    <list default="true" id="42b45871-b049-4845-9fbd-9c0cb1118fb1" name="Default" comment="gitignore">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfArrayOfKeyValueOfstringanyType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfanyTypeanyType$KeyValueOfanyTypeanyType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfanyTypeanyType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringArrayOfKeyValueOfstringanyTypety7Ep6D1$KeyValueOfstringArrayOfKeyValueOfstringanyTypety7Ep6D1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringArrayOfKeyValueOfstringanyTypety7Ep6D1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringArrayOfanyTypety7Ep6D1$KeyValueOfstringArrayOfanyTypety7Ep6D1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringArrayOfanyTypety7Ep6D1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringanyType$KeyValueOfstringanyType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringanyType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringstring$KeyValueOfstringstring.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringstring.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfanyType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfdateTime.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfstring.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/microsoft/schemas/_2003/_10/serialization/arrays/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/ArrayOfNrdImportInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/ArrayOfNrdLiability.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/ArrayOfNrdSecLiability.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/NrdCashLiability.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/NrdImportInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/NrdImportInfoCollection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/NrdLiability.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/NrdSecLiability.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/NrdTradeBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/ActionResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/ArrayOfActionResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/EnumFieldTypes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/InterActionLinkedTrade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/InterActionParamSchedule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/InterActionParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/OperationErrorCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_events_base/ArrayOfIdName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_events_base/IdName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_events_base/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_events_base/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_framework/EnumNovationRole.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_framework/EnumRoundingRule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_framework/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ArrayOfTradeInstrumentColumn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ArrayOfTradeInstrumentRow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ExerciseType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/SanctionControlRow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/TradeInstrumentColumn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/TradeInstrumentRow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/TradeInstruments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/AddDealEventContract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ArrayOfAddDealEventContract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ArrayOfDealEventProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ArrayOfDealField.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/DealBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/DealEventProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/DealField.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/EventsScheduleProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceDealOperation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceDetalizationResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceOperationResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceValueResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/AccountingStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/ArrayOfDealEventStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/BOParamStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/BoStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/CDSInputModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/CDSTypePriceofCurv.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/CtptLevel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/DealEventStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/FOStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/FdObjectType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/NrdImportState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/PayInterest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/RiskStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/SettleType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/TradeLsStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/TradeStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/TradeType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/system_collections/ArrayOfKeyValuePairOfstringstring.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/system_collections/KeyValuePairOfstringstring.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/system_collections/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/system_collections/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/AddDealEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/AddDealEventResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/BulkAddRateChange.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/BulkAddRateChangeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/BulkEventTryExecuteAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/BulkEventTryExecuteActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/BulkTryExecuteSTPAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/BulkTryExecuteSTPActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ChangeTradeBOStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ChangeTradeBOStatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ChangeTradeLSStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ChangeTradeLSStatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ClickButton.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ClickButtonResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CloneDeal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CloneDealResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CloseSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CloseSessionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CompleteExecuteAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CompleteExecuteActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CreateNewDeal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/CreateNewDealResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealFieldAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealFieldActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealFieldChange.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealFieldChangeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealFieldsChange.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealFieldsChangeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/DealServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventCancelEdit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventCancelEditResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventClickButton.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventClickButtonResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventSaveEdit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventSaveEditResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventSetValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventSetValueResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventStartEdit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventStartEditResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventTryExecuteAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/EventTryExecuteActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetDealDetalization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetDealDetalizationResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetEventDetalization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetEventDetalizationResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetEventResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetEventsSchedule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetEventsScheduleResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetFundingConsolidatedTrade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetFundingConsolidatedTradeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetSessionStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/GetSessionStatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/IDealService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ImportBasketRepo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ImportBasketRepoResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/InitializeSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/InitializeSessionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/InitiateDeal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/InitiateDealResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LinkedTradeEvaluateField.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LinkedTradeEvaluateFieldResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LinkedTradeExecuteSTPAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LinkedTradeExecuteSTPActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LoadTrade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LoadTradeMonitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LoadTradeMonitorResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/LoadTradeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/PrintTicket.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/PrintTicketResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/RecalcOpenTrade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/RecalcOpenTradeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ReloadFields.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ReloadFieldsResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/RetriveAndTryEventExecuteAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/RetriveAndTryEventExecuteActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/RetriveAndTryTradeExecuteAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/RetriveAndTryTradeExecuteActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ScheduleGetParameter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ScheduleGetParameterResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ScheduleGetProperty.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/ScheduleGetPropertyResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/TryExecuteSTPAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/TryExecuteSTPActionResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/UpdateCDSTradeEndOfDate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/UpdateCDSTradeEndOfDateResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/UpdateTrade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/UpdateTradeEndOfDate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/UpdateTradeEndOfDateResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/UpdateTradeResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tempuri/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/w3/_2005/_09/ws_i18n/International.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/w3/_2005/_09/ws_i18n/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/w3/_2005/_09/ws_i18n/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cxf-codegen-plugin-markers/.50F43AF7DF7759B0A04B5FB9724660E8E7D00544" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfArrayOfKeyValueOfstringanyType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfanyTypeanyType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringArrayOfKeyValueOfstringanyTypety7Ep6D1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringArrayOfanyTypety7Ep6D1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringanyType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfKeyValueOfstringstring.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfanyType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfdateTime.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ArrayOfstring.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/com/microsoft/schemas/_2003/_10/serialization/arrays/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/ArrayOfNrdImportInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/ArrayOfNrdLiability.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/ArrayOfNrdSecLiability.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/NrdCashLiability.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/NrdImportInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/NrdImportInfoCollection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/NrdLiability.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/NrdSecLiability.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/NrdTradeBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/ActionResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/ArrayOfActionResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/EnumFieldTypes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/InterActionLinkedTrade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/InterActionParamSchedule.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/InterActionParams.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/OperationErrorCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_events_base/ArrayOfIdName.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_events_base/IdName.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_events_base/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_events_base/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_framework/EnumNovationRole.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_framework/EnumRoundingRule.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_framework/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ArrayOfTradeInstrumentColumn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ArrayOfTradeInstrumentRow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ExerciseType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/SanctionControlRow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/TradeInstrumentColumn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/TradeInstrumentRow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/TradeInstruments.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/AddDealEventContract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ArrayOfAddDealEventContract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ArrayOfDealEventProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ArrayOfDealField.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/DealBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/DealEventProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/DealField.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/EventsScheduleProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceDealOperation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceDetalizationResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceOperationResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ServiceValueResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/AccountingStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/ArrayOfDealEventStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/BOParamStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/BoStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/CDSInputModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/CDSTypePriceofCurv.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/CtptLevel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/DealEventStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/FOStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/FdObjectType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/NrdImportState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/PayInterest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/RiskStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/SettleType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/TradeLsStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/TradeStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/TradeType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_transactionservice_client/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/system_collections/ArrayOfKeyValuePairOfstringstring.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/system_collections/KeyValuePairOfstringstring.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/system_collections/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/system_collections/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/AddDealEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/AddDealEventResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/BulkAddRateChange.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/BulkAddRateChangeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/BulkEventTryExecuteAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/BulkEventTryExecuteActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/BulkTryExecuteSTPAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/BulkTryExecuteSTPActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ChangeTradeBOStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ChangeTradeBOStatusResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ChangeTradeLSStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ChangeTradeLSStatusResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ClickButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ClickButtonResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CloneDeal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CloneDealResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CloseSession.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CloseSessionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CompleteExecuteAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CompleteExecuteActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CreateNewDeal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/CreateNewDealResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealFieldAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealFieldActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealFieldChange.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealFieldChangeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealFieldsChange.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealFieldsChangeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventCancelEdit.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventCancelEditResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventClickButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventClickButtonResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventSaveEdit.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventSaveEditResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventSetValue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventSetValueResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventStartEdit.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventStartEditResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventTryExecuteAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/EventTryExecuteActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetDealDetalization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetDealDetalizationResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetEventDetalization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetEventDetalizationResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetEventResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetEventsSchedule.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetEventsScheduleResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetFundingConsolidatedTrade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetFundingConsolidatedTradeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetSessionStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/GetSessionStatusResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/IDealService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ImportBasketRepo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ImportBasketRepoResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/InitializeSession.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/InitializeSessionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/InitiateDeal.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/InitiateDealResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LinkedTradeEvaluateField.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LinkedTradeEvaluateFieldResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LinkedTradeExecuteSTPAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LinkedTradeExecuteSTPActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LoadTrade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LoadTradeMonitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LoadTradeMonitorResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LoadTradeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/PrintTicket.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/PrintTicketResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/RecalcOpenTrade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/RecalcOpenTradeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ReloadFields.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ReloadFieldsResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/RetriveAndTryEventExecuteAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/RetriveAndTryEventExecuteActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/RetriveAndTryTradeExecuteAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/RetriveAndTryTradeExecuteActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ScheduleGetParameter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ScheduleGetParameterResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ScheduleGetProperty.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/ScheduleGetPropertyResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/TryExecuteSTPAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/TryExecuteSTPActionResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/UpdateCDSTradeEndOfDate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/UpdateCDSTradeEndOfDateResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/UpdateTrade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/UpdateTradeEndOfDate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/UpdateTradeEndOfDateResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/UpdateTradeResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/w3/_2005/_09/ws_i18n/International.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/w3/_2005/_09/ws_i18n/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/w3/_2005/_09/ws_i18n/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.egartech.RunCucumberTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.egartech.RunCucumberTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/RunCucumberTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/TSSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/helpers/Context.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/helpers/DateMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/helpers/ScenarioContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/network/TSHeaderHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/network/TSHeaderHandlerResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/network/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/registering-deals.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/wsdl/deal.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd0.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd1.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd10.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd11.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd12.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd13.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd14.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd2.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd3.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd4.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd5.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd6.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd7.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd8.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/xsd/xsd9.xsd" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" afterPath="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,15 +417,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TSSteps.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TSSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="63" column="60" lean-forward="true" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+            <state relative-caret-position="657">
+              <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3856#3857#0" expanded="true" />
-                <element signature="e#3896#3897#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,28 +432,8 @@
       <file leaf-file-name="deal.wsdl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/wsdl/deal.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="0" column="3295" lean-forward="true" selection-start-line="0" selection-start-column="3256" selection-end-line="0" selection-end-column="3295" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IDealService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/IDealService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="516" column="97" lean-forward="false" selection-start-line="516" selection-start-column="97" selection-end-line="516" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/Context.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="1543" lean-forward="false" selection-start-line="0" selection-start-column="1528" selection-end-line="0" selection-end-column="1543" />
               <folding />
             </state>
           </provider>
@@ -60,19 +442,17 @@
       <file leaf-file-name="TSHeaderHandlerResolver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandlerResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="95" lean-forward="false" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
+            <state relative-caret-position="170">
+              <caret line="14" column="28" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="14" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#485#494#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="false" />
+                <element signature="e#730#731#0" expanded="false" />
+                <element signature="e#780#781#0" expanded="false" />
+                <element signature="e#822#823#0" expanded="false" />
+                <element signature="e#857#858#0" expanded="false" />
+                <element signature="e#888#889#0" expanded="false" />
+                <element signature="e#936#937#0" expanded="false" />
+                <element signature="e#976#977#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,18 +461,10 @@
       <file leaf-file-name="TSHeaderHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3133#3134#0" expanded="true" />
-                <element signature="e#3165#3166#0" expanded="true" />
-                <element signature="e#3215#3216#0" expanded="true" />
-                <element signature="e#3257#3258#0" expanded="true" />
-                <element signature="e#3292#3293#0" expanded="true" />
-                <element signature="e#3323#3324#0" expanded="true" />
-                <element signature="e#3371#3372#0" expanded="true" />
-                <element signature="e#3411#3412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,21 +473,19 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="258">
+              <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScenarioContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,8 +493,8 @@
       <file leaf-file-name="registering-deals.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,6 +538,9 @@
       <replace>http:</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -193,12 +566,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/egartech/helpers/DateMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java" />
         <option value="$PROJECT_DIR$/src/test/resources/wsdl/deal.wsdl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandlerResolver.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/egartech/helpers/Context.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -268,6 +642,24 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="clean" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="focustest" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="Lifecycle" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
@@ -292,6 +684,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -307,9 +700,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -339,161 +729,18 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xsd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wsdl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="egartech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="egartech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="egartech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="focustest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="egartech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32216015" />
   </component>
@@ -708,26 +955,33 @@
       <option name="presentableId" value="Default" />
       <updated>1524572706726</updated>
     </task>
+    <task id="LOCAL-00001" summary="gitignore">
+      <created>1525425004125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525425004125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="0" width="1920" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16986156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34111112" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16986156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3403782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20979765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="CodotaView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -742,6 +996,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -749,20 +1007,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/LoadTrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitiateDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/org/tempuri/IDealService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -770,109 +1014,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitiateDealResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitializeSessionResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitializeSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/AddDealEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/AddDealEventResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/BulkAddRateChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/BulkAddRateChangeResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/BulkEventTryExecuteAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/ChangeTradeLSStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/ClickButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/CloneDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/CloseSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/DealServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitiateDealResponse.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitializeSessionResponse.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/InitializeSession.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/AddDealEvent.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/AddDealEventResponse.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/BulkAddRateChange.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/BulkAddRateChangeResponse.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/BulkEventTryExecuteAction.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/ChangeTradeLSStatus.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/ClickButton.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/CloneDeal.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/CloseSession.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated/cxf/org/tempuri/DealServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/InitializeSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,9 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,22 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/xsd/xsd3.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/xsd/xsd4.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="318" lean-forward="false" selection-start-line="0" selection-start-column="318" selection-end-line="0" selection-end-column="318" />
           <folding />
         </state>
       </provider>
@@ -1006,27 +1144,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/xsd/xsd0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2270" lean-forward="false" selection-start-line="0" selection-start-column="2270" selection-end-line="0" selection-end-column="2270" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/LoadTradeMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,7 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,15 +1162,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="91" column="34" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,57 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandlerResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="95" lean-forward="false" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#485#494#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3133#3134#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3257#3258#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3371#3372#0" expanded="true" />
-            <element signature="e#3411#3412#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,47 +1187,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/IDealService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="8653">
           <caret line="516" column="97" lean-forward="false" selection-start-line="516" selection-start-column="97" selection-end-line="516" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/xsd/xsd0.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="2270" lean-forward="false" selection-start-line="0" selection-start-column="2270" selection-end-line="0" selection-end-column="2270" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/xsd/xsd4.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="318" lean-forward="false" selection-start-line="0" selection-start-column="318" selection-end-line="0" selection-end-column="318" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/w3/_2005/_09/ws_i18n/ObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/xsd/xsd3.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/wsdl/deal.wsdl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="0" column="3295" lean-forward="true" selection-start-line="0" selection-start-column="3256" selection-end-line="0" selection-end-column="3295" />
+        <state relative-caret-position="0">
+          <caret line="0" column="1543" lean-forward="false" selection-start-line="0" selection-start-column="1528" selection-end-line="0" selection-end-column="1543" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandlerResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="e#698#699#0" expanded="false" />
+            <element signature="e#730#731#0" expanded="false" />
+            <element signature="e#780#781#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#857#858#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#976#977#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/network/TSHeaderHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="63" column="60" lean-forward="true" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+        <state relative-caret-position="657">
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3856#3857#0" expanded="true" />
-            <element signature="e#3896#3897#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,7 +1326,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.32216015" />
               </list>
             </option>
           </splitter-proportions>
@@ -1193,7 +1338,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.32216015" />
               </list>
             </option>
           </splitter-proportions>
