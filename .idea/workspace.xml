@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b45871-b049-4845-9fbd-9c0cb1118fb1" name="Default" comment="Обратите внимание на коментарии правильно ли я понял что делает код.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/_baseobjects/ObjectFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ObjectFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ObjectFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/_baseobjects/ObjectFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_interface_businessobjects/ObjectFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus_modules_dealmodule/ObjectFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/DealServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-sources/cxf/org/tempuri/IDealService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/egartech/registering-deals.feature" afterPath="" />
+    <list default="true" id="42b45871-b049-4845-9fbd-9c0cb1118fb1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java" afterPath="$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" afterPath="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,12 +14,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TSSteps.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TSSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1511">
               <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-              <folding />
+              <folding>
+                <element signature="e#4133#4134#0" expanded="true" />
+                <element signature="e#4173#4174#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +42,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-              <folding />
+              <folding>
+                <marker date="1525433279967" expanded="true" signature="41:636" ph="Scenario Outline: trademonitor //When compare with TS" />
+                <marker date="1525433279967" expanded="true" signature="514:636" ph="Examples" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScenarioContext.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScenarioContext.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -147,6 +139,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="s.kvyatkovsky" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -608,7 +605,7 @@
       <workItem from="1525364564984" duration="283000" />
       <workItem from="1525364955512" duration="757000" />
       <workItem from="1525365799598" duration="63000" />
-      <workItem from="1525422351284" duration="10139000" />
+      <workItem from="1525422351284" duration="10435000" />
     </task>
     <task id="LOCAL-00001" summary="Обратите внимание на коментарии правильно ли я понял что делает код.">
       <created>1525428014927</created>
@@ -638,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525428769110</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Второй комит.">
+      <created>1525433245917</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525433245917</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -647,11 +651,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14337000" />
+    <option name="totallyTimeSpent" value="14633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -659,7 +662,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33474576" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33474576" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33474576" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
@@ -694,7 +697,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Обратите внимание на коментарии правильно ли я понял что делает код." />
-    <option name="LAST_COMMIT_MESSAGE" value="Обратите внимание на коментарии правильно ли я понял что делает код." />
+    <MESSAGE value="Второй комит." />
+    <option name="LAST_COMMIT_MESSAGE" value="Второй комит." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -844,20 +848,20 @@
         <state relative-caret-position="850">
           <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
           <folding>
-            <marker date="1525360679039" expanded="true" signature="1976:3463" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="1994:3450" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2015:2460" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2211:2438" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2481:3431" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2662:3409" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2694:3379" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2840:3230" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2882:3189" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="2927:3146" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="3262:3346" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="3479:3557" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="3497:3541" ph="..." />
-            <marker date="1525360679039" expanded="true" signature="3575:3668" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2346:3405" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2346:3392" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2346:2402" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2346:2380" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2423:3373" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2604:3351" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2636:3321" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2782:3172" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2824:3131" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="2869:3088" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="3204:3288" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="3421:3499" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="3439:3483" ph="..." />
+            <marker date="1525433268934" expanded="true" signature="3517:3610" ph="..." />
           </folding>
         </state>
       </provider>
@@ -964,30 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/DateMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/cxf/org/datacontract/schemas/_2004/_07/egar_focus/InterActionParams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1016,7 +996,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding />
+          <folding>
+            <marker date="1525433279967" expanded="true" signature="41:636" ph="Scenario Outline: trademonitor //When compare with TS" />
+            <marker date="1525433279967" expanded="true" signature="514:636" ph="Examples" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,6 +1007,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1511">
           <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4173#4174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/DateMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/egartech/helpers/ScenarioContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
