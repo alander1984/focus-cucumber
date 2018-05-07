@@ -87,10 +87,10 @@ public class TSSteps {
         IDealService dealService = new DealServiceImpl().getBasicHttpBindingIDealService();
     }
 
-    @Then("^I should be told \"([^\"]*)\"$")
-    public void i_should_be_told() {
+   // @Then("^I should be told \"([^\"]*)\"$")
+   // public void i_should_be_told() {
 
-    }
+   // }
 
     @Then("^I should be told \"([^\"]*)\"$")
     public void i_should_be_told(String expectedAnswer) {
@@ -117,6 +117,66 @@ public class TSSteps {
         interActionParams.isIgnoreWarnings();
         interActionParams.isNeedToPrintTicket();
         iDealService.tryExecuteSTPAction(stpAction , execute,interActionParams);//  Отправляем xml
-        throw new PendingException();
+      //  throw new PendingException();
+    }
+
+    @When("^Send xml GetEventsSchedule with params \"([^\"]*)\"$")
+    public void sendXmlGetEventsScheduleWithParams(boolean showCanceledEvents) throws Throwable {
+        TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
+        tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString()); //  записываем в хедер параметры
+        tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());  //  записываем в хедер параметры
+        DealServiceImpl dealService = new DealServiceImpl();  // забираем всдл
+        dealService.setHandlerResolver(tsHandlerResolver); // вставляем записаные парметры в хедер.
+
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService(); // Сервисы из всдл
+        iDealService.getEventsSchedule("",showCanceledEvents);
+
+
+     //   throw new PendingException();
+    }
+
+    @When("^Send xml ScheduleGetParameter with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void sendXmlScheduleGetParameterWithParamsAndAnd(String fieldName, String eventId, String parameter) throws Throwable {
+        TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
+        tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString()); //  записываем в хедер параметры
+        tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());  //  записываем в хедер параметры
+
+        DealServiceImpl dealService = new DealServiceImpl();  // забираем всдл
+        dealService.setHandlerResolver(tsHandlerResolver); // вставляем записаные парметры в хедер.
+
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService();
+        iDealService.scheduleGetParameter(fieldName,eventId,parameter);
+
+
+
+      //  throw new PendingException();
+    }
+// ----------------- 6-q
+    @When("^Send xml ScheduleGetProperty with params \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void sendXmlScheduleGetPropertyWithParamsAnd(String fieldName, String property) throws Throwable {
+        TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
+        tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString()); //  записываем в хедер параметры
+        tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());  //  записываем в хедер параметры
+
+        DealServiceImpl dealService = new DealServiceImpl();  // забираем всдл
+        dealService.setHandlerResolver(tsHandlerResolver); // вставляем записаные парметры в хедер.
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService();
+        iDealService.scheduleGetProperty(fieldName,property);
+
+    //    throw new PendingException();
+    }
+
+    @When("^Send xml CloseSession without  params$")
+    public void sendXmlCloseSessionWithoutParams() throws Throwable {
+        TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver(); // Отправляем xml для полуучения сесии
+        tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString()); //  записываем в хедер параметры
+        tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());  //  записываем в хедер параметры
+
+        DealServiceImpl dealService = new DealServiceImpl();  // забираем всдл
+        dealService.setHandlerResolver(tsHandlerResolver); // вставляем записаные парметры в хедер.
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService();
+        iDealService.closeSession();
+    //    throw new PendingException();
+
     }
 }
