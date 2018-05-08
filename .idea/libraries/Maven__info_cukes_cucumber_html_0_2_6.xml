@@ -2,12 +2,14 @@
   <library name="Maven: info.cukes:cucumber-html:0.2.6">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar!/" />
+      <root url="file://$PROJECT_DIR$/target" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/target/generated-sources/cxf" />
     </SOURCES>
   </library>
 </component>

@@ -5,14 +5,12 @@ Feature: Checking registering deals
         When init focus session for username "<login>" with loginName "<loginName>"
         When load trademonitor for deal number "<tradeId>" with horizon from "<horizon>"
         And try execute STP action
-        When Send xml request third with params "Cancel" and "false"
-        When Send xml GetEventsSchedule with params "false"
-        When Send xml ScheduleGetParameter with params "EventsSchedule" and "3486461" and "DealCcyName"
-        When Send xml ScheduleGetProperty with params "EventsSchedule" and "IsReadOnly"
+        When Send xml tryExecuteSTPAction with params "<stpAction>" and "<execute>"
+        When Send xml GetEventsSchedule with params "<showCanceledEvents>"
+        When Send xml ScheduleGetParameter with params "<fieldName>" and "<eventId>" and "<parameter>"
+        When Send xml ScheduleGetProperty with params "<fieldName>" and "<property>"
         When Send xml CloseSession without  params
 
-        Then I should be told "Nope"
-
         Examples:
-            | login   | loginName | tradeId | horizon |
-            | MKinder | MKinder | 1984951 | 2018-04-24 |
+            | login   | loginName | tradeId | horizon | stpAction | execute | showCanceledEvents | fieldName | eventId | parameter| property |
+            | MKinder | MKinder | 1984951 | 2018-04-24 | Cancel | false     |      false        | EventsSchedule | 3486461 |  DealCcyName | IsReadOnly|
