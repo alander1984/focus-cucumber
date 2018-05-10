@@ -125,12 +125,8 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         InterActionParams interActionParams = new InterActionParams();
         serviceDealOperation = iDealService.tryExecuteSTPAction("stpAction" , execute,interActionParams);//  Отправляем xml и записываем в переменную
-
-
-        boolean a = serviceDealOperation.getDescription().getValue().toString().equals("�� ������������� ������ �������� ������ 1984951?");
-        System.out.println(a);
-        boolean b = serviceDealOperation.getUserName().getValue().toString().equals("MKinder");
-        System.out.println(b);
+        assertEquals(serviceDealOperation.getDescription().getValue().toString(),"�� ������������� ������ �������� ������ 1984951?");
+        assertEquals(serviceDealOperation.getUserName().getValue().toString(),"MKinder");
     }
 
 
