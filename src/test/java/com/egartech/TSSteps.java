@@ -240,7 +240,7 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         ServiceDealOperation s = iDealService.clickButton("Counterparty");
     }
-
+//--
     @When("^Send xml DealFieldAction with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
     public void sendXmlDealFieldActionWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
