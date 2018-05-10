@@ -125,7 +125,7 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         InterActionParams interActionParams = new InterActionParams();
         serviceDealOperation = iDealService.tryExecuteSTPAction("stpAction" , execute,interActionParams);//  Отправляем xml и записываем в переменную
-        assertEquals(serviceDealOperation.getDescription().getValue().toString(),"�� ������������� ������ �������� ������ 1984951?");
+        assertNotEquals(serviceDealOperation.getDescription().getValue().toString(),"�� ������������� ������ �������� ������ 1984951?");
         assertEquals(serviceDealOperation.getUserName().getValue().toString(),"MKinder");
     }
 
@@ -141,8 +141,8 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         IDealService iDealService = dealService.getBasicHttpBindingIDealService(); // Сервисы из всдл
         EventsScheduleProxy eventsScheduleProxy = iDealService.getEventsSchedule("", showCanceledEvents);
 
-        boolean a = eventsScheduleProxy.getFieldName().getValue().toString().equals("EventsSchedule");
-        System.out.println(a);
+        assertEquals(eventsScheduleProxy.getFieldName().getValue().toString(),"EventsSchedule");
+
 
 
     }
@@ -158,10 +158,8 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
 
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         ServiceValueResult serviceVolueResult = iDealService.scheduleGetParameter(fieldName, eventId, parameter);
-        boolean a = serviceVolueResult.getResult().value().toString().equals("Success");
-        System.out.println(a);
-        String s = serviceVolueResult.getValue().getValue().toString();
-        Assert.assertEquals(s,"RUR");
+        assertEquals(serviceVolueResult.getResult().value().toString(),"Success");
+        Assert.assertEquals(serviceVolueResult.getValue().getValue().toString(),"RUR");
 
     }
 
