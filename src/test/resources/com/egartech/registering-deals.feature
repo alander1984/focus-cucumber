@@ -14,3 +14,18 @@ Feature: Checking registering deals
         Examples:
             | login   | loginName | tradeId | horizon | stpAction | execute | showCanceledEvents | fieldName | eventId | parameter| property |
             | MKinder | MKinder | 1984951 | 2018-04-24 | Cancel | false     |      false        | EventsSchedule | 3486461 |  DealCcyName | IsReadOnly|
+
+    Scenario Outline: fwd_fix_otc_eq
+        Given the web service is running at "alfaload-app.egar.egartech.com" port "6767"
+        When init focus session for username "<login>" with loginName "<loginName>"
+        And try execute STP action
+        When Send xml InitializeSession with params "Locale" and "TZ" and "ShortDatePattern"
+        When Send xml Creat new Deal with params "Locale" and "TZ" and "ShortDatePattern"
+        When Send xml Click Button with params "Locale" and "TZ" and "ShortDatePattern"
+        When Send xml DealFieldAction with params "Locale" and "TZ" and "ShortDatePattern"
+
+
+
+        Examples:
+            | login   | loginName |
+            | MKinder | MKinder |
