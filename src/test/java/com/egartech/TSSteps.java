@@ -115,8 +115,10 @@ public class TSSteps {
 
 // ------------------------------*** Scenario Outline: trademonitor ***-----------------------------------------
 
-@When("^Send xml tryExecuteSTPAction with params \"([^\"]*)\" and \"([^\"]*)\"$")
-public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean execute) throws Throwable {
+
+
+    @When("^action on a transaction action: \"([^\"]*)\" execute takes on values true or false \"([^\"]*)\"$")
+    public void actionOnATransactionActionExecuteTakesOnValuesTrueOrFalse(String stpAction, boolean execute) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -126,14 +128,13 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         InterActionParams interActionParams = new InterActionParams();
-        serviceDealOperation = iDealService.tryExecuteSTPAction("stpAction" , execute,interActionParams);//  Отправляем xml и записываем в переменную
+        serviceDealOperation = iDealService.tryExecuteSTPAction(stpAction ,execute,interActionParams);//  Отправляем xml и записываем в переменную
         assertNotEquals(serviceDealOperation.getDescription().getValue().toString(),"�� ������������� ������ �������� ������ 1984951?");
         assertEquals(serviceDealOperation.getUserName().getValue().toString(),"MKinder");
     }
 
-
-    @When("^Send xml GetEventsSchedule with params \"([^\"]*)\"$")
-    public void sendXmlGetEventsScheduleWithParams(boolean showCanceledEvents) throws Throwable {
+    @When("^get events schedule \"([^\"]*)\"$")
+    public void getEventsSchedule(boolean Events) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -141,16 +142,13 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         dealService.setHandlerResolver(tsHandlerResolver);
 
         IDealService iDealService = dealService.getBasicHttpBindingIDealService(); // Сервисы из всдл
-        EventsScheduleProxy eventsScheduleProxy = iDealService.getEventsSchedule("", showCanceledEvents);
+        EventsScheduleProxy eventsScheduleProxy = iDealService.getEventsSchedule("", Events);
 
         assertEquals(eventsScheduleProxy.getFieldName().getValue().toString(),"EventsSchedule");
-
-
-
     }
 
-    @When("^Send xml ScheduleGetParameter with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlScheduleGetParameterWithParamsAndAnd(String fieldName, String eventId, String parameter) throws Throwable {
+    @When("^get  Schedule Parameter with Name:\"([^\"]*)\" Event:\"([^\"]*)\" Parametr:\"([^\"]*)\"$")
+    public void getScheduleParameterWithNameEventParametr(String fieldName, String eventId, String parameter) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -162,11 +160,10 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         ServiceValueResult serviceVolueResult = iDealService.scheduleGetParameter(fieldName, eventId, parameter);
         assertEquals(serviceVolueResult.getResult().value().toString(),"Success");
         Assert.assertEquals(serviceVolueResult.getValue().getValue().toString(),"RUR");
-
     }
 
-    @When("^Send xml ScheduleGetProperty with params \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlScheduleGetPropertyWithParamsAnd(String fieldName, String property) throws Throwable {
+    @When("^get  Schedule Property with Name: \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void getSchedulePropertyWithNameAnd(String fieldName, String property) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -175,13 +172,11 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         iDealService.scheduleGetProperty(fieldName, property);
-
-
-
     }
 
-    @When("^Send xml CloseSession without  params$")
-    public void sendXmlCloseSessionWithoutParams() throws Throwable {
+
+    @When("^close session$")
+    public void closeSession() throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -190,14 +185,12 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         iDealService.closeSession();
-
-
     }
 
-//------------------------------*** Scenario Outline: trademonitor ***-----------------------------------------
+//------------------------------*** Scenario Outline: fwd_fix_otc_eq ***-----------------------------------------
 
-    @When("^Send xml InitializeSession with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlInitializeSessionWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
+    @When("^initialize session with params: \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void initializeSessionWithParamsAndAndAndAndAndAndAnd(String userName, String windowsLoginName, String hostName, String aplicationName, String international, String numberDecimalSeparator, String numberGroupSeparator, String shortDatePattern) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -205,16 +198,12 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         DealServiceImpl dealService = new DealServiceImpl();
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
-        International international = new International();
-        iDealService.initializeSession("MKinder","MKinder","ALFALOAD-CL","Focus32",International.class.newInstance(),",","","dd.MM.yyyy");
-
-
+        iDealService.initializeSession(userName,windowsLoginName,hostName,aplicationName,International.class.newInstance() ,numberDecimalSeparator,numberGroupSeparator,shortDatePattern);
 
     }
 
-
-    @When("^Send xml Creat new Deal with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlCreatNewDealWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
+    @When("^creat new deal with params : \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void creatNewDealWithParamsAndAnd(String dealType, String instrType, String fieldsFilter) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -223,14 +212,13 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         String s = TradeType.PROP_OTC.value();
-        System.out.println("#######" + s);
-        ServiceDealOperation a = iDealService.createNewDeal("SpotForward", "Bond", TradeType.fromValue(s), "");
+        ServiceDealOperation a = iDealService.createNewDeal(dealType, instrType, TradeType.fromValue(s), fieldsFilter);
         Assert.assertEquals(a.getDeal().getName().toString(),"{http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration}Deal");
-
     }
 
-    @When("^Send xml Click Button with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlClickButtonWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
+
+    @When("^click Button by name : \"([^\"]*)\"$")
+    public void clickButtonByName(String buttonName) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -238,11 +226,12 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         DealServiceImpl dealService = new DealServiceImpl();
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
-        ServiceDealOperation s = iDealService.clickButton("Counterparty");
+        iDealService.clickButton(buttonName);
     }
+
 //--
-    @When("^Send xml DealFieldAction with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlDealFieldActionWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
+    @When("^deal Field Action with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void dealFieldActionWithParamsAndAnd(String fieldName, String action, String val) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
         tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
         tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
@@ -250,8 +239,26 @@ public void sendXmlTryExecuteSTPActionWithParamsAnd(String stpAction, boolean ex
         DealServiceImpl dealService = new DealServiceImpl();
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
-        ServiceDealOperation s = iDealService.dealFieldAction("Counterparty", "Reload", "");
+        ServiceDealOperation s = iDealService.dealFieldAction(fieldName, action, val);
+    }
+
+
+    @When("^Send xml DealFieldChange with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void sendXmlDealFieldChangeWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
 
     }
 
+
+    @When("^deal Field Change with params \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void dealFieldChangeWithParamsAnd(String names, String values) throws Throwable {
+        TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
+        tsHandlerResolver.setSessionID(scenarioContext.getContext(Context.SESSION_ID).toString());
+        tsHandlerResolver.setUserName(scenarioContext.getContext(Context.USERNAME).toString());
+
+        DealServiceImpl dealService = new DealServiceImpl();
+        dealService.setHandlerResolver(tsHandlerResolver);
+        IDealService iDealService = dealService.getBasicHttpBindingIDealService();
+        ServiceDealOperation s = iDealService.dealFieldChange(names, values);
+        Assert.assertEquals(s.getUserName().getValue().toString(),"MKinder");
+    }
 }
