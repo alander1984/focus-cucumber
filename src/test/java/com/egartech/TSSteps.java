@@ -1,5 +1,6 @@
 package com.egartech;
 
+import com.ctc.wstx.io.UTF8Writer;
 import com.egartech.helpers.Context;
 import com.egartech.helpers.DateMapper;
 import com.egartech.helpers.ScenarioContext;
@@ -7,6 +8,7 @@ import com.egartech.network.TSHeaderHandlerResolver;
 import com.egartech.network.Utils;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfKeyValueOfstringArrayOfKeyValueOfstringanyTypety7Ep6D1;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
+import com.sun.net.httpserver.Authenticator;
 import com.sun.org.apache.xpath.internal.operations.Equals;
 import cucumber.api.PendingException;
 import cucumber.api.Transform;
@@ -31,6 +33,7 @@ import org.datacontract.schemas._2004._07.egar_focus.InterActionParams;
 import org.datacontract.schemas._2004._07.egar_focus.OperationErrorCode;
 import org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule.*;
 import org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule.DealEventProxy;
+import org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule.DealField;
 import org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule.EventsScheduleProxy;
 import org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule.ServiceDealOperation;
 import org.datacontract.schemas._2004._07.egar_focus_modules_dealmodule.ServiceOperationResult;
@@ -171,7 +174,8 @@ public class TSSteps {
         DealServiceImpl dealService = new DealServiceImpl();
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
-        iDealService.scheduleGetProperty(fieldName, property);
+        Object s = iDealService.scheduleGetProperty(fieldName, property);
+        Assert.assertEquals("true",s.toString());
     }
 
 
@@ -184,7 +188,9 @@ public class TSSteps {
         DealServiceImpl dealService = new DealServiceImpl();
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
-        iDealService.closeSession();
+        Boolean s = iDealService.closeSession();
+        Assert.assertTrue(s);
+
     }
 
 //------------------------------*** Scenario Outline: fwd_fix_otc_eq ***-----------------------------------------
@@ -213,7 +219,16 @@ public class TSSteps {
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         String s = TradeType.PROP_OTC.value();
         ServiceDealOperation a = iDealService.createNewDeal(dealType, instrType, TradeType.fromValue(s), fieldsFilter);
-        Assert.assertEquals(a.getDeal().getName().toString(),"{http://schemas.datacontract.org/2004/07/Egar.Focus.Modules.DealModule.Integration}Deal");
+
+
+        Assert.assertEquals(a.getDeal().getValue().getFields().getValue().getDealField().get(4).getText().getValue().replace("/",""),dealType);
+        Assert.assertEquals(a.getResult().value().toString(), "Success");
+        Assert.assertEquals(a.getUserName().getValue().toString(),"MKinder");
+        Assert.assertFalse(String.valueOf(a.isIsCompleted()),false);
+        Assert.assertFalse(String.valueOf(a.isShowMessageBox()),false);
+
+
+
     }
 
 
@@ -243,11 +258,6 @@ public class TSSteps {
     }
 
 
-    @When("^Send xml DealFieldChange with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void sendXmlDealFieldChangeWithParamsAndAnd(String arg0, String arg1, String arg2) throws Throwable {
-
-    }
-
 
     @When("^deal Field Change with params \"([^\"]*)\" and \"([^\"]*)\"$")
     public void dealFieldChangeWithParamsAnd(String names, String values) throws Throwable {
@@ -260,5 +270,16 @@ public class TSSteps {
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         ServiceDealOperation s = iDealService.dealFieldChange(names, values);
         Assert.assertEquals(s.getUserName().getValue().toString(),"MKinder");
+        if(names.equals("TradeType")){
+            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(6).getName(), names);
+            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(6).getText().getValue(), values);
+        }else {
+            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(0).getName(), "ClearingHouseAccount");
+            boolean assertString = s.getDeal().getValue().getFields().getValue().getDealField().get(0).getText().equals(values);
+            String convertBoolInString = String.valueOf(assertString);
+            Assert.assertTrue(convertBoolInString,true);
+        }
+
+
     }
 }
