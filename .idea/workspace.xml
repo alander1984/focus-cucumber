@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b45871-b049-4845-9fbd-9c0cb1118fb1" name="Default" comment="Second scenario start.">
+    <list default="true" id="42b45871-b049-4845-9fbd-9c0cb1118fb1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java" afterPath="$PROJECT_DIR$/src/test/java/com/egartech/TSSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/com/egartech/deals.feature" afterPath="$PROJECT_DIR$/src/test/resources/com/egartech/deals.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" afterPath="$PROJECT_DIR$/src/test/resources/com/egartech/registering-deals.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -693,7 +690,7 @@
       <workItem from="1525364955512" duration="757000" />
       <workItem from="1525365799598" duration="63000" />
       <workItem from="1525422351284" duration="81621000" />
-      <workItem from="1525967415329" duration="60687000" />
+      <workItem from="1525967415329" duration="60707000" />
     </task>
     <task id="LOCAL-00001" summary="Обратите внимание на коментарии правильно ли я понял что делает код.">
       <created>1525428014927</created>
@@ -793,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526401940397</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Second scenario start.">
+      <created>1526401958744</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1526401958744</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -823,7 +827,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146506000" />
+    <option name="totallyTimeSpent" value="146526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -874,11 +878,11 @@
     <MESSAGE value="All steps scenario treadmonitor." />
     <MESSAGE value="Refactor + Assert steps + Rename." />
     <MESSAGE value="repleace assert" />
-    <MESSAGE value="Second scenario start." />
     <MESSAGE value="Second scenario finished. And re-name steps. Check plz." />
     <MESSAGE value="add deals.feature&#10;add Assert &#10;the actual values ​​found" />
     <MESSAGE value="Dirty commit.&#10;Did not build.&#10;It,s not work because bad assert, i will fix it late." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dirty commit.&#10;Did not build.&#10;It,s not work because bad assert, i will fix it late." />
+    <MESSAGE value="Second scenario start." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second scenario start." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
