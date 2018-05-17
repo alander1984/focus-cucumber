@@ -12,7 +12,7 @@
    #  When deal Field Change with params "TradeDate" and "2018-04-12T00:00:00+03:00"
      When deal Field Change with params "MarginSystem" and "23"
      When deal Field Change with params "Underlying" and "83137"
-     When deal Field Change with params "QtyItems" and "100"
+     When deal Field Change with params "QtyItems" and "102"
      When deal Field Change with params "Price" and "100"
      When deal Field Change with params "CostCenter" and "201"
      When deal Field Change with params "Portfolio" and "214"
@@ -20,8 +20,8 @@
      When deal Field Change with params "DestCostCenter" and "201"
      When deal Field Change with params "DestPortfolio" and "214"
      When deal Field Change with params "DestBook" and "1419"
-     When deal Field Change with params "DestBook" and "1419"
-     When deal Field Change with params "Channel" and "3"
+  #   When deal Field Change with params "DestBook" and "1419"
+    When deal Field Change with params "Channel" and "3"
 #17
 
      When action on a transaction action: "ForControl" execute takes on values true or false "false"
