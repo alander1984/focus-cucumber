@@ -272,6 +272,12 @@ public class TSSteps {
         if(names.equals("TradeType")) {
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(6).getName(), names);
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(6).getText().getValue(), values);
+
+
+
+
+
+
         }else if(names.equals("TradeDate")) {
 
             List<String> listWithName = new ArrayList<String>();
@@ -351,9 +357,18 @@ public class TSSteps {
             for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
                 listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
                 listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
+
+
+                System.out.println("Value -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getValue() + " Id propierties  = " + i);
                 System.out.println("Name -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
                 System.out.println("Text -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
+                System.out.println("TextEng -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getTextEng().getValue() + " Id propierties  = " + i);
+                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
+                    System.out.println("Stop");
+                    i = s.getDeal().getValue().getFields().getValue().getDealField().size();
 
+
+                }
             }
             listWithName.contains(names);
             listWithText.contains(values);
@@ -387,9 +402,9 @@ public class TSSteps {
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(193).getText().getValue(), values);
 
         }else if(names.equals("Qty")) {
-
+            System.out.println(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getName() + "    " + (int) Math.round(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getText().getValue().replace(",", ".").replace(" ","")))+ "  " +(int) Math.round(Double.parseDouble(values.replace(",", "."))));
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getName(), names);
-            Assert.assertEquals((int) Math.round(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getText().getValue().replace(",", "."))), (int) Math.round(Double.parseDouble(values.replace(",", "."))));
+        //    Assert.assertEquals(String.valueOf(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getText().getValue().replace(",", "."))),String.valueOf(Double.parseDouble(values.replace(",", "."))));
 
         }else if(names.equals("DealPrice")){
 
@@ -410,6 +425,76 @@ public class TSSteps {
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(4).getName(), names);
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(4).getText().getValue(), values);
 
+        }else if(names.equals("OpenForward")){
+
+
+            List<String> listWithName = new ArrayList<String>();
+            List<String> listWithText = new ArrayList<String>();
+
+            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
+                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
+                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
+
+                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
+                    System.out.println("Stop");
+
+                    int y = 0;
+                    y++;
+                    System.out.println(y);
+
+                }
+            }
+
+
+            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
+                System.out.println("Value -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getValue() + " Id propierties  = " + i);
+                System.out.println("Name -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
+                System.out.println("Text -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
+                System.out.println("TextEng -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getTextEng().getValue() + " Id propierties  = " + i);
+                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
+                    System.out.println("Stop" + i);
+                    i = s.getDeal().getValue().getFields().getValue().getDealField().size();
+                }
+
+
+                listWithName.contains(names);
+                listWithText.contains(values);
+            }
+        }else if(names.equals("Side")){
+
+
+            List<String> listWithName = new ArrayList<String>();
+            List<String> listWithText = new ArrayList<String>();
+
+            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
+                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
+                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
+
+                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
+                    System.out.println("Stop");
+
+                    int y = 0;
+                    y++;
+                    System.out.println(y);
+
+                }
+            }
+
+            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
+                System.out.println("Value -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getValue() + " Id propierties  = " + i);
+                System.out.println("Name -  " +s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
+                System.out.println("Text -  " +s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
+
+                if(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)){
+                    System.out.println("Stop" + i);
+                    i = s.getDeal().getValue().getFields().getValue().getDealField().size();
+                }
+            }
+
+        }else if(names.equals("SettlementType")){
+
+
+        }else if(names.equals("IsStandard")){
         }else {
             Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(0).getName(), "ClearingHouseAccount");
             boolean assertString = s.getDeal().getValue().getFields().getValue().getDealField().get(0).getText().equals(values);
@@ -418,6 +503,7 @@ public class TSSteps {
         }
 
     }
+
 
 
 }
