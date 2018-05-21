@@ -65,6 +65,8 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.junit.Assert.*;
 
@@ -205,7 +207,6 @@ public class TSSteps {
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         iDealService.initializeSession(userName,windowsLoginName,hostName,aplicationName,International.class.newInstance() ,numberDecimalSeparator,numberGroupSeparator,shortDatePattern);
-
     }
 
     @When("^creat new deal with params : \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -225,10 +226,7 @@ public class TSSteps {
         Assert.assertFalse(String.valueOf(a.isIsCompleted()),false);
         Assert.assertFalse(String.valueOf(a.isShowMessageBox()),false);
 
-
-
     }
-
 
     @When("^click Button by name : \"([^\"]*)\"$")
     public void clickButtonByName(String buttonName) throws Throwable {
@@ -242,7 +240,6 @@ public class TSSteps {
         iDealService.clickButton(buttonName);
     }
 
-//--
     @When("^deal Field Action with params \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
     public void dealFieldActionWithParamsAndAnd(String fieldName, String action, String val) throws Throwable {
         TSHeaderHandlerResolver tsHandlerResolver = new TSHeaderHandlerResolver();
@@ -267,243 +264,27 @@ public class TSSteps {
         dealService.setHandlerResolver(tsHandlerResolver);
         IDealService iDealService = dealService.getBasicHttpBindingIDealService();
         ServiceDealOperation s = iDealService.dealFieldChange(names, values);
-        Assert.assertEquals(s.getUserName().getValue().toString(),"MKinder");
-        System.out.println(names + "######################################################################");
-        if(names.equals("TradeType")) {
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(6).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(6).getText().getValue(), values);
-
-
-
-
-
-
-        }else if(names.equals("TradeDate")) {
-
-            List<String> listWithName = new ArrayList<String>();
-            List<String> listWithText = new ArrayList<String>();
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
-                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
-                System.out.println("Name -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
-                System.out.println("Text -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
-            }
-            listWithName.contains(names);
-            listWithText.contains(values);
-
-        }else if(names.equals("MarginSystem")) {
-
-            System.out.println("MarginSystem"); // Не нашел за что зацепится
-
-        }else if(names.equals("Underlying")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(38).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(38).getText().getValue(), values);
-
-        }else if(names.equals("QtyItems")){
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(95).getName(), names);
-            Assert.assertEquals((int)Math.round(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(95).getText().getValue().replace(",","."))), (int) Math.round(Double.parseDouble(values.replace(",","."))));
-
-        }else if(names.equals("Price")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(54).getName(), names);
-            Assert.assertEquals((int) Math.round(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(54).getText().getValue().replace(",", "."))), (int) Math.round(Double.parseDouble(values.replace(",", "."))));
-
-        }else if(names.equals("CostCenter")) {
-
-            System.out.println(s.getDeal().getValue().getFields().getValue().getDealField().get(4).getName() + "                   " +names);
-            List<String> listWithName = new ArrayList<String>();
-            List<String> listWithText = new ArrayList<String>();
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
-                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
-                System.out.println("Name -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
-                System.out.println("Text -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
-
-            }
-            listWithName.contains(names);
-            listWithText.contains(values);
-
-        }else if(names.equals("Portfolio")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(5).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(5).getText().getValue(), values);
-
-        }else if(names.equals("Book")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getText().getValue(), values);
-
-        }else if(names.equals("DestCostCenter")) {
-
-            System.out.println("DestCostCenter"); // Не нашел за что зацепится
-
-        }else if(names.equals("DestPortfolio")) {
-
-            System.out.println("DestPortfolio"); // Не нашел за что зацепится
-
-        }else if(names.equals("DestBook")){
-
-            System.out.println("DestBook");  // Не нашел за что зацепится
-
-        }else if(names.equals("Channel")) {
-
-            List<String> listWithName = new ArrayList<String>();
-            List<String> listWithText = new ArrayList<String>();
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
-                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
-
-
-                System.out.println("Value -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getValue() + " Id propierties  = " + i);
-                System.out.println("Name -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
-                System.out.println("Text -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
-                System.out.println("TextEng -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getTextEng().getValue() + " Id propierties  = " + i);
-                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
-                    System.out.println("Stop");
-                    i = s.getDeal().getValue().getFields().getValue().getDealField().size();
-
-
-                }
-            }
-            listWithName.contains(names);
-            listWithText.contains(values);
-
-
-
-        }else if(names.equals("Counterparty")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(3).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(3).getText().getValue(), values);
-
-        }else if(names.equals("TradeTime")){
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(2).getName(), names); // Нашел только один элемент
-
-        }else if(names.equals("IsStandard")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(102).getName(), names);
-            String convrt = s.getDeal().getValue().getFields().getValue().getDealField().get(102).getText().getValue();
-            Assert.assertEquals(convrt, values);
-
-        }else if(names.equals("InstrType")) {
-
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(5).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(5).getText().getValue(), values);
-
-        }else if(names.equals("ForwardInstrType")) {
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(193).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(193).getText().getValue(), values);
-
-        }else if(names.equals("Qty")) {
-            System.out.println(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getName() + "    " + (int) Math.round(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getText().getValue().replace(",", ".").replace(" ","")))+ "  " +(int) Math.round(Double.parseDouble(values.replace(",", "."))));
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getName(), names);
-        //    Assert.assertEquals(String.valueOf(Double.parseDouble(s.getDeal().getValue().getFields().getValue().getDealField().get(1).getText().getValue().replace(",", "."))),String.valueOf(Double.parseDouble(values.replace(",", "."))));
-
-        }else if(names.equals("DealPrice")){
-
-            System.out.println("DealPrice"); // Не нашел за что зацепится
-
-        }else if(names.equals("Settlement")){
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(7).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(7).getText().getValue(), values);
-
-        }else if(names.equals("Custodian")){
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(62).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(62).getText().getValue(), values);
-
-        }else if(names.equals("Branch")){
-
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(4).getName(), names);
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(4).getText().getValue(), values);
-
-        }else if(names.equals("OpenForward")){
-
-
-            List<String> listWithName = new ArrayList<String>();
-            List<String> listWithText = new ArrayList<String>();
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
-                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
-
-                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
-                    System.out.println("Stop");
-
-                    int y = 0;
-                    y++;
-                    System.out.println(y);
-
-                }
-            }
-
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                System.out.println("Value -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getValue() + " Id propierties  = " + i);
-                System.out.println("Name -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
-                System.out.println("Text -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
-                System.out.println("TextEng -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getTextEng().getValue() + " Id propierties  = " + i);
-                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
-                    System.out.println("Stop" + i);
-                    i = s.getDeal().getValue().getFields().getValue().getDealField().size();
-                }
-
-
-                listWithName.contains(names);
-                listWithText.contains(values);
-            }
-        }else if(names.equals("Side")){
-
-
-            List<String> listWithName = new ArrayList<String>();
-            List<String> listWithText = new ArrayList<String>();
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                listWithName.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName());
-                listWithText.add(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue());
-
-                if (s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)) {
-                    System.out.println("Stop");
-
-                    int y = 0;
-                    y++;
-                    System.out.println(y);
-
-                }
-            }
-
-            for (int i = 0;i < s.getDeal().getValue().getFields().getValue().getDealField().size();i++) {
-                System.out.println("Value -  " + s.getDeal().getValue().getFields().getValue().getDealField().get(i).getValue() + " Id propierties  = " + i);
-                System.out.println("Name -  " +s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName() + " Id propierties  = " + i);
-                System.out.println("Text -  " +s.getDeal().getValue().getFields().getValue().getDealField().get(i).getText().getValue() + " Id propierties  = " + i);
-
-                if(s.getDeal().getValue().getFields().getValue().getDealField().get(i).getName().startsWith(names)){
-                    System.out.println("Stop" + i);
-                    i = s.getDeal().getValue().getFields().getValue().getDealField().size();
-                }
-            }
-
-        }else if(names.equals("SettlementType")){
-
-
-        }else if(names.equals("IsStandard")){
-        }else {
-            Assert.assertEquals(s.getDeal().getValue().getFields().getValue().getDealField().get(0).getName(), "ClearingHouseAccount");
-            boolean assertString = s.getDeal().getValue().getFields().getValue().getDealField().get(0).getText().equals(values);
-            String convertBoolInString = String.valueOf(assertString);
-            Assert.assertTrue(convertBoolInString,true);
-        }
+        Assert.assertEquals(s.getUserName().getValue().toString(), "MKinder");
+
+        List<String> listWithNameT = s.getDeal().getValue().getFields().getValue().getDealField()
+                .stream()
+                .map(DealField::getName)
+                .collect(Collectors.toList());
+     //  костыль для вывода костыль для вывода не удаляю потому что дебагер не работает  listWithNameT.forEach(a -> System.out.println(a));
+        Assert.assertTrue(listWithNameT
+                .stream()
+                .filter(f -> f.startsWith(names))
+                .allMatch(f -> f.startsWith(names)));
+
+        List<String> listWithTextT = s.getDeal().getValue().getFields().getValue().getDealField()
+                .stream()
+                .map(t -> t.getText().getValue())
+                .collect(Collectors.toList());
+     //  костыль для вывода не удаляю потому что дебагер не работает  listWithTextT.forEach(f -> System.out.println(f));
+        Assert.assertTrue(listWithTextT
+                .stream()
+                .filter(f -> f == (values))
+                .allMatch(f -> f == (values)));
 
     }
-
-
-
 }
